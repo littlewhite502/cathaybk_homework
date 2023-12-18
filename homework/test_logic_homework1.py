@@ -2,7 +2,7 @@ def bounce(initial_height, count, total_cm):
     if count <= 0:
        return total_cm
     current_travel_distance = initial_height + (initial_height // 2)
-    print(f"第{count}次：{current_travel_distance:.2f} 公分")
+    print(f"第{ 11 - count}次：{current_travel_distance:.2f} 公分")
     total_cm += current_travel_distance
     initial_height /= 2
     return bounce(initial_height, count - 1,total_cm)
